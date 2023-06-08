@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --text: #484b6a;
+    --bg-light: #fafafa;
+    --bg-dark: #1e1e29;
+  
+    --radius: 0.75rem;
+    --radius-s: 0.25rem;
+    --shadow: 1px 1px 13px #03030390;
+  
+    --font-family: 'Space Grotesk', sans-serif;
+
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+    --box-shadow-lite: rgba(174, 174, 184, 0.2) 0px 2px 8px 0px;;
+  
+    font-size: 1rem;
+}
+  
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: auto;
+    color: var(--text);
+    background: var(--bg-light);
+    align-items: flex-start;
+    justify-content: center;
+    font-family: var(--font-family);
+}
+
+/* ========= Navbar ======================== */
+.nav {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: var(--bg-light);
+    color: var(--text);
+    gap: 4rem;
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow-lite);
+    font-size: 1.1rem;
+    align-items: baseline;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* ========= Search ======================== */
+.group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+}
+   
+.input {
+    width: 40%;
+    padding-left: 2.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--bg-light);
+    color: var(--text);
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+   
+.input::placeholder {
+    color: var(--text);
+}
+   
+.icon {
+    position: relative;
+    left: 2rem;
+    fill: var(--text);
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+/* ========= Main image ======================== */
+.wrapper {
+    display: flex;
+    position: relative;
+}
